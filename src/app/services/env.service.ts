@@ -4,6 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class EnvService {
+  // PARA RECIBIR LLAMAMODOS DE API
+  API_URL = '';
 
   constructor() { }
 }
