@@ -1,9 +1,14 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>dashboard</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Principal</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <div *ngIf="user != undefined">
+      Welcome {{ user["first_name"]  }} {{ user["last_name"]  }}
+  </div>
 </ion-content>
