@@ -7,13 +7,21 @@ import { IonicModule } from '@ionic/angular';
 import { RegisterPageRoutingModule } from './register-routing.module';
 
 import { RegisterPage } from './register.page';
+import { LoginPageModule } from '../login/login.module';
 
 @NgModule({
+  entryComponents: [
+    
+  ],
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RegisterPageRoutingModule
+    RegisterPageRoutingModule,
+    LoginPageModule
+  ],
+  exports:[
+    RegisterPage
   ],
   declarations: [RegisterPage]
 })
